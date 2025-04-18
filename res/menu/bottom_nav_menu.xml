@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_inicio"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/navigation_entrevistas"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Entrevistas" />
+    <item
+        android:id="@+id/navigation_comentarios"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Comentarios" />
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/navigation_mas"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Más" />
+</menu>
