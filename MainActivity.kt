@@ -1,3 +1,4 @@
+
 package com.example.interviewface
 
 import android.content.Intent
@@ -10,17 +11,17 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var practiceRecyclerView: RecyclerView
+    private lateinit var recyclerViewPractice: RecyclerView
     private lateinit var practiceAdapter: PracticeInterviewAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        practiceRecyclerView = findViewById(R.id.recyclerViewPractice)
+        recyclerViewPractice = findViewById(R.id.recyclerViewPractice)
         practiceAdapter = PracticeInterviewAdapter(getPracticeInterviews())
-        practiceRecyclerView.adapter = practiceAdapter
-        practiceRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        recyclerViewPractice.adapter = practiceAdapter
+        recyclerViewPractice.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationView.selectedItemId = R.id.navigation_inicio
